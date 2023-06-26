@@ -42,7 +42,7 @@
 /*  01. theme defult css start
 /*----------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet');
-
+@import url('https://fonts.cdnfonts.com/css/varino');
 :root {
   /**
   @font family declaration
@@ -12487,11 +12487,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .corporate-hero-title {
   font-weight: 700;
-  font-size: 125px;
+  font-size: 110px;
   line-height: 1.1;
   letter-spacing: -0.03em;
   color: var(--tp-common-black);
   padding-bottom: 20px;
+  font-family: 'Varino', sans-serif;
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
