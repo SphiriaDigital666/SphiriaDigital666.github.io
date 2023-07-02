@@ -3400,7 +3400,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 57px;
   line-height: 57px;
   text-align: center;
-  background-color: #fff;
+  background-color: #1DBEAB;
   border-radius: 10px;
   box-shadow: 0px -2px 12px #EBE9F3;
 }
@@ -3890,7 +3890,7 @@ only screen and (min-width: 1601px) and (max-width: 1800px) {
   height: 100vh;
   box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
   /* background-color: black; */
-  background-image: url("../img/header/backheader.png");
+  background-image: url("../img/header/leftbar.png");
   /* The image used */
   /* background-color: #cccccc; */
   /* Used if the image is unavailable */
@@ -8165,6 +8165,12 @@ only screen and (min-width: 768px) and (max-width: 991px),
   display: inline-block;
 }
 
+.tp-project-tab-button {
+  background-color: transparent;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
 .tp-project-tab-button button {
   font-size: 15px;
   font-weight: 500;
@@ -8172,6 +8178,46 @@ only screen and (min-width: 768px) and (max-width: 991px),
   position: relative;
   margin: 10px;
   transition: background-position 275ms ease;
+}
+
+.headerBarButton {
+  background-color: #1DBDAB;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  margin-bottom: 50px;
+}
+
+.headerBarButton:hover {
+  background-color: #fff;
+  padding: 15px 35px;
+  color: #1DBDAB;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #1DBDAB;
+
+}
+
+.headerBarButtons {
+  background-color: #1DBDAB;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  height: 60%;
+}
+
+.headerBarButtons:hover {
+  background-color: #fff;
+
+  color: #1DBDAB;
+  border-radius: 20px;
+  font-weight: 700;
+  border: 1px solid #1DBDAB;
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -12352,11 +12398,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   }
 }
 
+
 @media (max-width: 767px) {
   .corporate-plr {
     padding-left: 0;
     padding-right: 0;
     padding-top: 20px;
+
   }
 }
 
@@ -12494,6 +12542,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   line-height: 64px;
   letter-spacing: -0.02em;
   color: var(--tp-common-white);
+
 }
 
 .corporate-header__bar button {
