@@ -8179,6 +8179,29 @@ only screen and (min-width: 768px) and (max-width: 991px),
   margin: 10px;
   transition: background-position 275ms ease;
 }
+.headerBarButtonIcon {
+  background-color: #fff;
+  padding: 25px;
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  margin-bottom: 50px;
+}
+
+.headerBarButtonIcon:hover {
+  background-color: #ffffff00;
+  color: #1DBDAB;
+
+  font-weight: 700;
+  border: 1px solid #1dbdaa00;
+  
+
+}
+.headerBarButtonIcon:hover img{
+ 
+transform: translateY(-5px);
+}
 
 .headerBarButton {
   background-color: #1DBDAB;
