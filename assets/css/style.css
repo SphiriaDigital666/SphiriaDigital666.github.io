@@ -2697,6 +2697,21 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   background: var(--tp-common-black);
 }
 
+.black-bgs {
+  background-image: url("../img/header/backheader.png");
+  /* The image used */
+  /* background-color: #cccccc; */
+  /* Used if the image is unavailable */
+
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
 .black-bg-2 {
   background: var(--tp-common-black-2);
 }
@@ -3874,7 +3889,18 @@ only screen and (min-width: 1601px) and (max-width: 1800px) {
   width: 690px;
   height: 100vh;
   box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
-  background-color: black;
+  /* background-color: black; */
+  background-image: url("../img/header/backheader.png");
+  /* The image used */
+  /* background-color: #cccccc; */
+  /* Used if the image is unavailable */
+
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
   z-index: 9999;
   transition: 1s;
   padding-right: 120px;
@@ -12355,7 +12381,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   padding: 45px 55px;
   padding-right: 0;
   border-right: 1px solid #3A3A42;
-  background-color: var(--tp-common-black);
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
