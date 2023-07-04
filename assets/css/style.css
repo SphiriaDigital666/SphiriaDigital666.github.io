@@ -10869,7 +10869,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tp-common-blue);
+  background-color: #384140;
   border-radius: 10px;
   opacity: 0;
   visibility: hidden;
@@ -10912,7 +10912,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .tpteam__content i {
   font-size: 15px;
-  color: var(--tp-common-black);
+  color: #fff;
   padding: 0px 15px;
   transition: 0.3s;
 }
@@ -10942,7 +10942,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tp-team-sm-title {
-  color: var(--tp-common-black);
+  color: #fff;
   font-size: 22px;
   font-weight: 500;
   transition: 0.3s;
@@ -10953,7 +10953,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tp-team-sm-subtitle {
-  color: var(--tp-common-black);
+  color: #fff;
   font-size: 12px;
   font-weight: 500;
   transition: 0.3s;
