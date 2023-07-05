@@ -182,7 +182,7 @@
 
                      <button class="active" data-filter=".cat1"><span>Web Development</span></button>
                      <button data-filter=".cat2"><span>Branding</span></button>
-                     <button data-filter=".cat3"><span>Creative Design</span></button>
+                     <!-- <button data-filter=".cat3"><span>Creative Design</span></button> -->
                      <button data-filter=".cat4"><span>3D Modeling</span></button>
                      <button data-filter=".cat5"><span>NFT & Illustrations</span></button>
                      <button data-filter=".cat6"><span>Minting websites & DApp</span></button>
@@ -314,14 +314,14 @@
                      </div>
                   </div>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-6 grid-item  cat5">
+               <!-- <div class="col-xl-4 col-lg-4 col-md-6 grid-item  cat5">
                   <div class="tp-project-item-four tp-img-reveal-item mb-30" data-subtitle="NFTs"
                      data-title="Titan Takeover" data-fx="1">
                      <div class="tp-project-item-four__img fix">
                         <a href="#"><img class="w-100" src="assets/img/portfolio/Giant.jpg" alt=""></a>
                      </div>
                   </div>
-               </div>
+               </div> -->
                <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat5">
                   <div class="tp-project-item-four tp-img-reveal-item mb-30" data-subtitle="NFTs" data-title="Cyber"
                      data-fx="1">
@@ -451,7 +451,7 @@
                   <div class="tp-project-item-four tp-img-reveal-item mb-30" data-subtitle="Web Sites & DApp"
                      data-title="Kdoge" data-fx="1">
                      <div class="tp-project-item-four__img fix">
-                        <a href="#"><img class="w-100" src="assets/img/web-dapp/web-banner-kdoge.png" alt=""></a>
+                        <a href="#"><img class="w-100" src="assets/img/web-dapp/Web Banner9.png" alt=""></a>
                      </div>
                   </div>
                </div>
@@ -467,7 +467,7 @@
                   <div class="tp-project-item-four tp-img-reveal-item mb-30" data-subtitle="Web Sites & DApp"
                      data-title="Lom" data-fx="1">
                      <div class="tp-project-item-four__img fix">
-                        <a href="#"><img class="w-100" src="assets/img/web-dapp/Web-banner-lom.png" alt=""></a>
+                        <a href="#"><img class="w-100" src="assets/img/web-dapp/Web Banner1.png" alt=""></a>
                      </div>
                   </div>
                </div>
@@ -484,7 +484,7 @@
                   <div class="tp-project-item-four tp-img-reveal-item mb-30" data-subtitle="Web Sites & DApp"
                      data-title="Power of zeus dao" data-fx="1">
                      <div class="tp-project-item-four__img fix">
-                        <a href="#"><img class="w-100" src="assets/img/web-dapp/web-banner-powerofzeusdao.png"
+                        <a href="#"><img class="w-100" src="assets/img/web-dapp/Web Banner6.png"
                               alt=""></a>
                      </div>
                   </div>
@@ -493,7 +493,7 @@
                   <div class="tp-project-item-four tp-img-reveal-item mb-30" data-subtitle="Web Sites & DApp"
                      data-title="Titan take over" data-fx="1">
                      <div class="tp-project-item-four__img fix">
-                        <a href="#"><img class="w-100" src="assets/img/web-dapp/web-banner-titantakeover.png"
+                        <a href="#"><img class="w-100" src="assets/img/web-dapp/Web Banner7.png"
                               alt=""></a>
                      </div>
                   </div>
@@ -1012,7 +1012,7 @@
                </div>
             </div>
 
-            
+
             <div class="row">
                <div class="col-12">
                   <div class="tp-project-button text-center mt-25">
@@ -1161,7 +1161,7 @@
 // Initialize filters on page load
 
 <script>
-   $(document).ready(function() {
+   $(document).ready(function () {
       // Initialize Isotope
       var $grid = $('.grid').isotope({
          itemSelector: '.grid-item',
@@ -1169,7 +1169,7 @@
       });
 
       // Bind click event to filter buttons
-      $('.tp-project-tab-button button').on('click', function() {
+      $('.tp-project-tab-button button').on('click', function () {
          var filterValue = $(this).attr('data-filter');
          $grid.isotope({ filter: filterValue });
       });
