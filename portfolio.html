@@ -174,7 +174,7 @@
 
       <!-- project-area-start -->
       <div class="tp-project-area tp-cc-project pt-130 pb-100 px-3 px-md-0">
-         <div class="container">
+         <div id="grid-container" class="container">
             <div class="row justify-content-center mb-70">
                <div class="col-10 p-0 text-center">
                   <div class="tp-project-tab-button masonary-menu">
@@ -189,8 +189,6 @@
                      <button data-filter=".cat7"><span>2D Arts</span></button>
                      <button data-filter=".cat8"><span>Anime</span></button>
                      <button data-filter=".cat9"><span>Realistic</span></button>
-
-
 
                   </div>
                </div>
@@ -914,15 +912,6 @@
                   </div>
                </div>
 
-
-
-
-
-
-
-
-
-
                <!-- Realistic -->
                <div class="col-xl-4 col-lg-4 col-md-6 grid-item cat9">
                   <div class="tp-project-item-four tp-img-reveal-item mb-30" data-subtitle="Realistic"
@@ -1021,17 +1010,19 @@
                      </div>
                   </div>
                </div>
-
             </div>
+
+            
             <div class="row">
                <div class="col-12">
                   <div class="tp-project-button text-center mt-25">
-                     <a class="tp-btn-yellow" href="#">Lode more</a>
+                     <button id="load-more-btn" class="tp-btn-yellow">Load More</button>
                   </div>
                </div>
             </div>
 
          </div>
+
       </div>
       <!-- project-area-end -->
 
@@ -1165,5 +1156,27 @@
    <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/main.js"></script>
 </body>
+
+// ----------------------------------------------------------------
+// Initialize filters on page load
+
+<script>
+   $(document).ready(function() {
+      // Initialize Isotope
+      var $grid = $('.grid').isotope({
+         itemSelector: '.grid-item',
+         layoutMode: 'fitRows'
+      });
+
+      // Bind click event to filter buttons
+      $('.tp-project-tab-button button').on('click', function() {
+         var filterValue = $(this).attr('data-filter');
+         $grid.isotope({ filter: filterValue });
+      });
+
+      // Trigger click on the first filter button to show items on initial page load
+      $('.tp-project-tab-button button.active').trigger('click');
+   });
+</script>
 
 </html>
