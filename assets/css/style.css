@@ -8660,7 +8660,68 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   transition: 0.3s;
   z-index: 5;
 }
+.teamImagesRes{
+  border-radius: 50px;
 
+}
+.teamImagesRes:hover {
+  border-radius: 50px;
+  transform: scale(1.01);
+}
+.image-container {
+  position: relative;
+border-radius: 50px;
+  /* Adjust the width as needed */
+  
+  /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.image-container img {
+  
+  transition: transform 0.3s ease;
+  /* Transition effect duration and easing */
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+  border-radius: 20px;
+  /* Adjust the scale factor to your preference */
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  /* Transition effect for border color */
+  box-sizing: border-box;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00c8c52a;
+  /* Adjust the overlay color and opacity */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* Transition effect for opacity */
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-container:hover::before {
+  border-color: #ff000000;
+  /* Change to your desired border color */
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-project-item-four__info-sm {
     padding: 19px 23px;
